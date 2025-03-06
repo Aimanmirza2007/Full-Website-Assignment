@@ -1,0 +1,269 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./project\ images/home-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+  padding: 20px;
+  width: 100%;
+}
+.nav {
+  width: 80%;
+  height: 70px;
+  background-color: aqua;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-close,
+.nav-menu {
+  display: flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.show-menu{
+  top: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    font-weight: 600;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color:hsla(0%, 0%, 0%, .3);
+    width: 100%;
+    padding: 4rem;
+    backdrop-filter: blur(24px);
+    transition: top 4s;
+  }
+}
+
+
+.nav-list{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+.nav-close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+ }  */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* .container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./project\ images/home-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to left,rgb(184, 183, 183),rgb(141, 140, 140),rgb(109, 108, 108),rgb(180, 179, 179));
+  padding: 20px;
+  width: 100%;  
+}
+
+.nav {
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-close,
+.nav-menu {
+  display: flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.show-menu {
+  top: 0 !important;
+}
+
+.nav-links {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  background-color: hsla(0%, 0%, 0%, 0.3);
+  width: 100%;
+  padding: 4rem;
+  backdrop-filter: blur(24px);
+  transition: top 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-list {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.home {
+  position: relative;
+}
+.home-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  object-position: center;
+}
+.main-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 58%,
+    hsla(0, 0%, 0%) 78%
+  );
+}
+.home-container {
+  position: relative;
+  padding-top: 7rem;
+}
+.home-content {
+  text-align: center;
+}
+.home-sub-title {
+  font-size: 20px;
+}
+.home-main-title {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+.home-para-title {
+  color: rgba(245, 245, 245, 0.842);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.button {
+  display: inline-flex;
+  gap: 30px;
+  word-spacing: 5px;
+  background-color: rgba(216, 213, 213, 0.082);
+  padding: 25px 35px;
+  border: none;
+  font-weight: lighter;
+  backdrop-filter: blur(24px);
+}
+.home-cards {
+  margin-top: 3rem;
+}
+.home-card {
+  position: relative;
+  overflow: hidden;
+}
+.home-card-image {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.home-card-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 50%,
+    hsla(0, 0%, 0%) 125%
+  );
+}
+.card-title {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 1.5rem;
+}
+.home-card:hover .home-card-image {
+  transform: scale(1.2);
+}
+.button i{
+  font-size: 20px;
+  transition: transform .3s;
+} 
+.button:hover i{
+  transform: translateX(.25rem);
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    font-weight: 600;
+    width: 100%;
+    padding: 4rem;
+    transition: top 0.3s ease-in-out; /* Added smooth transition */
+  }
+
+  .nav-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+}
