@@ -78,7 +78,7 @@ li {
 
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Agdasima";
 }
 
 body {
@@ -347,15 +347,71 @@ a {
 .popular-location {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   font-weight: 500;
 }
 .popular-location i {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .popular-cards {
   margin-bottom: 3rem;
 }
+
+/*  EXPLORE SECTION */
+.explore-section {
+  position: relative;
+}
+.explore-image {
+  position: absolute;
+  overflow: hidden;
+}
+.explore-pic {
+  width: 300px;
+  transition: transform 0.4s;
+  width: 100%;
+  height: 333px;
+  object-fit: cover;
+  object-position: center;
+}
+.explore-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%) 5%,
+    hsla(0, 0%, 0%, 0) 40%,
+    hsla(0, 0%, 0%, 0) 60%,
+    hsla(0, 0%, 0%) 92%
+  );
+}
+.explore-image:hover .explore-pic {
+  transform: scale(1.2);
+}
+.explore-content-container {
+  text-align: center;
+  position: relative;
+  padding-top: 14rem;
+}
+.explore-para {
+  line-height: 1.6;
+}
+.explore-users {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+.user-profile {
+  width: 30px;
+  border-radius: 50%;
+}
+.profile-name {
+  font-size: small;
+}
+/*  EXPLORE SECTION */
 
 @media screen and (max-width: 1024px) {
   .nav-links {
