@@ -366,7 +366,7 @@ a {
   overflow: hidden;
 }
 .explore-pic {
-  width: 300px;
+  /* width: 300px; */
   transition: transform 0.4s;
   width: 100%;
   height: 333px;
@@ -393,9 +393,10 @@ a {
 .explore-content-container {
   text-align: center;
   position: relative;
-  padding-top: 14rem;
+  padding-top: 12rem;
 }
 .explore-para {
+  word-spacing: 4px;
   line-height: 1.6;
 }
 .explore-users {
@@ -412,6 +413,156 @@ a {
   font-size: small;
 }
 /*  EXPLORE SECTION */
+
+/* JOIN SECTION */
+.join-section {
+  margin-top: 4.5rem;
+}
+.join-content {
+  text-align: center;
+}
+.join-img {
+  width: 300px;
+  transition: transform 0.4s;
+}
+.join-image:hover .join-img {
+  transform: scale(1.2);
+}
+.join-image {
+  padding-top: 5rem;
+  justify-self: center;
+  position: relative;
+  overflow: hidden;
+}
+.join-container {
+  padding-bottom: 3rem;
+}
+.join-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 50%,
+    hsla(0, 0%, 0%) 125%
+  );
+}
+
+.join-form {
+  margin-top: 2rem;
+  display: grid;
+  row-gap: 1rem;
+}
+.join-form input {
+  color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 16px;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-out;
+}
+.join-form input:focus {
+  transform: scale(1.01);
+  outline: 3px solid rgb(2, 167, 167);
+}
+.join-meassage {
+  color: teal;
+  transition: all 0.3s ease-out;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 15px;
+  padding-left: 16px;
+}
+.join-form textarea:focus {
+  transform: scale(1.01);
+  outline: 3px solid rgb(2, 167, 167);
+}
+.join-btn {
+  color: white;
+  background-color: rgba(216, 213, 213, 0.082);
+  border: none;
+  font-weight: lighter;
+  backdrop-filter: blur(24px);
+  font-size: 17px;
+  cursor: pointer;
+  padding: 15px;
+  transition: all 0.4s ease-out;
+}
+.join-btn:hover {
+  transform: scale(1.01);
+  background-color: rgb(1, 63, 63);
+}
+/* JOIN SECTION */
+/* FOOTER SECTION */
+.footer {
+  padding: 3rem;
+  background-color: rgba(216, 213, 213, 0.082);
+}
+.footer-logo {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.foot-list {
+  list-style-type: none;
+}
+.footer-links {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1rem 1rem;
+}
+.footer--list{
+  transition: color .3s;
+  color: rgb(114, 114, 114);
+  font-size: 17px;
+}
+.footer--list:hover{
+  color: aliceblue;
+}
+
+.fa-brands {
+  color: rgb(114, 114, 114);
+}
+.foot-copy-right{
+  font-size: 17px;
+}
+.footer-social,
+.social-links{
+  display: flex;
+}
+.foot-list{
+  display: grid;
+  gap: .75rem;
+}
+.footer-social{
+  color: rgb(114, 114, 114);
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+.social-links{
+  gap: 1rem;
+}
+.footer-social-links{
+  transition: all .4s;
+}
+.footer-social-links:hover{
+  transform:translateY(-.27rem);
+}
+.foot-para{
+  color: grey;
+  font-size: 23px;
+}
+.foot-heading{
+  font-size: 21px;
+}
+
+/* FOOTER SECTION */
 
 @media screen and (max-width: 1024px) {
   .nav-links {
