@@ -113,7 +113,28 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.nav-btn{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-left: 50px;
+}
+.nav-btn button{
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 0%, 0.459);
+  color: white;
+  width: 120px;
+  height: 35px;
+  font-size: 18px;
+  transition: all .4s ease-out;
+}
+.nav-btn button:hover{
+  box-shadow: 7px 7px 5px rgb(238, 237, 237);
+}
 .nav-close,
 .nav-menu {
   display: flex;

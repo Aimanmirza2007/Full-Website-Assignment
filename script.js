@@ -50,13 +50,7 @@ document.getElementById("submit").addEventListener("click", function (event) {
       email: document.getElementById("email").value,
     }
   );
-  if (event) {
-    msg.innerText = `your response has been recorded`;
-  } else {
-    msg.innerText = `please enter your response`;
-  }
 });
-
 const navLinks = document.getElementById("nav-links");
 const newMenu = document.getElementById("nav-menu");
 const newClose = document.getElementById("nav-close");
@@ -81,3 +75,14 @@ const linkAction = () => {
   Action.classList.remove("show-menu");
 };
 Links.forEach((element) => element.addEventListener("click", linkAction));
+
+// sign up
+const SignUp = document.getElementById("Sign-up");
+SignUp.addEventListener('click',function(){
+  window.location.href = "./LOGIN SIGNUP WORK/signup.html"
+})
+// sign up
+// const Login = document.getElementById("Sign-up");
+// Login.addEventListener('click',function(){
+//   window.location.href = "./LOGIN SIGNUP WORK/signup.html"
+// })
