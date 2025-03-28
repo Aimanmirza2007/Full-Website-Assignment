@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(home-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 60px aqua;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+    border: 1px solid white;
+    animation: round 6s linear ease-in;
+  }
+/*   
+  .container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    z-index: 1;
+    animation: round 6s linear infinite;
+  } */
+  
+  /* @keyframes round {
+    0% {
+      transform: translateY(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form-container {
+    position: relative;
+    margin: 35px;
+  }
+  
+  
+  
+  .form-container input {
+    color: teal;
+    font-size: 15px;
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 5px;
+    border: 2px solid teal;
+    outline: none;
+    padding-left: 10px;
+    transition: all 0.2s ease-out;
+    margin-top: 10px;
+  }
+  .form-container input:focus {
+    transform: scale(1.01);
+    outline: 2px solid rgb(2, 167, 167);
+  }
+  
+  .btn {
+    margin-left: 30px;
+    width: 23.5vw;
+    height: 50px;
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .heading {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  /* .name,
+  .email,
+  .password {
+    width: 22vw;
+    height: 50px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+  } */
+  @media screen and (max-width: 400px) {
+    .btn {
+      width: 120px;
+      height: 40px;
+    }
+    .heading {
+      font-size: 28px;
+    }
+    
+  }
+  

@@ -277,12 +277,7 @@ a {
 .about-section {
   margin-top: 5rem;
 }
-/* .about-container{
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 30px  ;
-} */
+
 .about-content {
   text-align: center;
 }

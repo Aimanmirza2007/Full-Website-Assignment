@@ -81,8 +81,8 @@ const SignUp = document.getElementById("Sign-up");
 SignUp.addEventListener('click',function(){
   window.location.href = "./LOGIN SIGNUP WORK/signup.html"
 })
-// sign up
-// const Login = document.getElementById("Sign-up");
-// Login.addEventListener('click',function(){
-//   window.location.href = "./LOGIN SIGNUP WORK/signup.html"
-// })
+// Login
+const Login = document.getElementById("Login");
+Login.addEventListener('click',function(){
+  window.location.href = "./LOGIN SIGNUP WORK/login.html"
+})
