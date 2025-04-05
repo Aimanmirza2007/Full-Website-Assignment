@@ -1,18 +1,4 @@
-// const navLinks = document.getElementById("nav-links");
-// newMenu = document.getElementById("nav-menu");
-// newClose = document.getElementById("nav-close");
-
-// if (newMenu) {
-//   newMenu.addEventListener("click", () => {
-//     navLinks.classList.add("show-menu");
-//   });
-// }
-
-// if (newClose) {
-//   newClose.addEventListener("click", () => {
-//     navLinks.classList.remove("show-menu");
-//   });
-// }
+// DATABASE WORK
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
 import {
@@ -49,8 +35,14 @@ document.getElementById("submit").addEventListener("click", function (event) {
       message: document.getElementById("message").value,
       email: document.getElementById("email").value,
     }
+   
   );
+  alert("Response recorded")
 });
+
+// DATABASE WORK
+
+// NAVBAR RESPONSIVE
 const navLinks = document.getElementById("nav-links");
 const newMenu = document.getElementById("nav-menu");
 const newClose = document.getElementById("nav-close");
@@ -75,6 +67,7 @@ const linkAction = () => {
   Action.classList.remove("show-menu");
 };
 Links.forEach((element) => element.addEventListener("click", linkAction));
+// NAVBAR RESPONSIVE
 
 // sign up
 const SignUp = document.getElementById("Sign-up");
